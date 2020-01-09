@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
 
     @ResponseBody
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String hello() {
         return "Hello Advatix Demo Controller";
     }
