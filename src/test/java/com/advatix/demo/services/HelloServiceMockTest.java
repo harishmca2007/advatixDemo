@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-//@ExtendWith(MockitoExtension.class) , need this? still able to run.
+
 @SpringBootTest
 public class HelloServiceMockTest {
 
@@ -26,7 +26,7 @@ public class HelloServiceMockTest {
 
     @BeforeEach
     void setMockOutput() {
-        //when(helloService.get()).thenReturn("Hello Mockito");
+        
         when(helloRepository.get()).thenReturn("Hello Mockito Advatix Demo");
     }
 
