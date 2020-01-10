@@ -20,12 +20,12 @@ public class MainControllerTest {
     private int port;
 
     @Autowired
-    private TestRestTemplate restTemplate;
+    private TestRestTemplate testRestTemplate;
 
     @Test
     public void getHello() throws Exception {
 
-        ResponseEntity<String> response = restTemplate.getForEntity(new URL("http://localhost:" + port + "/hello").toString(), String.class);
+        ResponseEntity<String> response = testRestTemplate.getForEntity(new URL("http://localhost:" + port + "/hello").toString(), String.class);
         assertEquals("Hello Advatix Demo Controller", response.getBody());
 
     }
