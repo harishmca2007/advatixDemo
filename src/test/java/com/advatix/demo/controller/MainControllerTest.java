@@ -27,6 +27,7 @@ public class MainControllerTest {
 
         ResponseEntity<String> response = testRestTemplate.getForEntity(new URL("http://localhost:" + port + "/hello").toString(), String.class);
         assertEquals("Hello Advatix Demo Controller", response.getBody());
+        
 
     }
 
